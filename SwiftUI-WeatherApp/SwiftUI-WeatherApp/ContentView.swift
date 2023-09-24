@@ -101,6 +101,11 @@ struct BackgroundView: View {
                        endPoint: .bottomTrailing)
             .ignoresSafeArea()
     }
+    // iOS 16 Update:
+//    ContainerRelativeShape()
+//        .fill(isNightMode ? Color.black.gradient : Color.blue.gradient)
+//        .ignoresSafeArea()
+
 }
 
 struct CityTextView: View{
