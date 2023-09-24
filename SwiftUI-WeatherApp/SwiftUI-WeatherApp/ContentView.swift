@@ -69,8 +69,15 @@ struct WeatherDayView: View {
                 .font(.system(size: 20, weight: .medium, design: .default))
                 .foregroundColor(.white)
             Image(systemName: imageName)
+            // Rendering mode to change each color layer of the SF symbols
                 .renderingMode(.original)
+                //.symbolRenderingMode(.hierarchical)
+               // .symbolRenderingMode(.palette)
                 .resizable()
+            // change color after .resizable()
+                //.foregroundColor(.red)
+            // depending on how many layers the SF symbols have
+               // .foregroundStyle(.pink, .orange, .green)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             Text("\(degrees)°")
@@ -92,7 +99,7 @@ struct BackgroundView: View {
         LinearGradient(gradient: Gradient(colors: [isNightMode ? Color.black : Color.blue, isNightMode ? Color("gray") : Color("lightBlue")]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
-            .edgesIgnoringSafeArea(.all)
+            .ignoresSafeArea()
     }
 }
 
