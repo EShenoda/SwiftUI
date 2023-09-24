@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // While the rest of the view is created and destroyed...Keep the state
     @State private var isNightMode = false
     
     var body: some View {
         
         ZStack {
             
-            BackgroundGradient(colorTop: isNightMode ? Color.black : Color.blue, colorBottom: isNightMode ? "gray": "lightBlue")
+            // Pass Binding down the View hierarchy
+            BackgroundView(isNightMode: $isNightMode)
             
             VStack{
                 
@@ -78,13 +80,16 @@ struct WeatherDayView: View {
     }
 }
 
-struct BackgroundGradient: View {
+struct BackgroundView: View {
     
-    var colorTop: Color
-    var colorBottom: String
+//    var colorTop: Color
+//    var colorBottom: String
+    
+    // Must match the state at the top of the View hierarchy: use Binding
+    @Binding var isNightMode: Bool
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [colorTop, Color(colorBottom)]),
+        LinearGradient(gradient: Gradient(colors: [isNightMode ? Color.black : Color.blue, isNightMode ? Color("gray") : Color("lightBlue")]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
             .edgesIgnoringSafeArea(.all)
