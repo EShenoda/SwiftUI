@@ -6,6 +6,7 @@
 ## Table of contents
 
 * [Weather App](#weather-app)
+* [Apple Frameworks App](#apple-frameworks)
 * [Copyright](#copyright)
 * [Contact](#contact)
 
@@ -27,13 +28,23 @@ __Topics of research__:
 * @State, @Binding
 * Structs
 * Code refactoring
-* Passing data between views
 
 <br>
 
 __Main Files__
 
 [ContentView](SwiftUI-WeatherApp/SwiftUI-WeatherApp/ContentView.swift)
+
+<br>
+
+## Apple Frameworks
+
+__Topics of research__:
+
+* Model View View Model
+* Passing data between views
+* Grids, Scrollviews, Sheets
+* Navigation Views
 
 <br>
 
