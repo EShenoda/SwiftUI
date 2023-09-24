@@ -16,6 +16,7 @@ struct WeatherButton: View{
     
     var body: some View {
         
+        // Order matters for modifiers
         Text(title)
             .frame(width: 280, height: 50)
             .background(backgroundColor)
