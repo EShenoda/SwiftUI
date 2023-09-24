@@ -21,6 +21,15 @@
    <img src= "Images/Weather2.png" height=350/>
 </p>
 
+__Topics of research__:
+
+* SwiftUI View Hierarchy
+* ZStack, HStack, VStack
+* @State, @Binding
+* Structs
+* Code refactoring
+* Passing data between views
+
 <br>
 
 __Main Files__
