@@ -6,7 +6,7 @@
 
 ## Table of contents
 
-* [Weather App]
+* [Weather App](#weather-app)
 * [Copyright](#copyright)
 * [Contact](#contact)
 
@@ -23,8 +23,7 @@
 
 <br>
 
-[Content](SwiftUI-WeatherApp/SwiftUI-WeatherApp
-/ContentView.swift)
+[ContentView](SwiftUI-WeatherApp/SwiftUI-WeatherApp/ContentView.swift)
 
 <br>
 
