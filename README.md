@@ -45,6 +45,8 @@ __Topics of research__:
 * Passing data between views
 * Grids, Scrollviews, Sheets
 * Navigation Views
+* LazyVGrid, LazyHGrid
+* Dynamic text
 
 <br>
 
