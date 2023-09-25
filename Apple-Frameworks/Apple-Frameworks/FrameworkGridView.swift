@@ -21,7 +21,7 @@ struct FrameworkGridView: View {
                 
                 LazyVGrid(columns: columnsArray) {
                     
-                    ForEach(MockData.frameworks) { frameworkData in
+                    ForEach(MockData.frameworksArray) { frameworkData in
                         
                         FrameworkTitleView(frameworkDataToDisplay: frameworkData)
                     }
