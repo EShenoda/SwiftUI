@@ -68,7 +68,9 @@ __Topics of research__:
 __Main Files__
 
 [Framework Model](Apple-Frameworks/Apple-Frameworks/Framework.swift)
+
 [Framework DetailView](Apple-Frameworks/Apple-Frameworks/FrameworkDetailView.swift)
+
 [Framework GridView](Apple-Frameworks/Apple-Frameworks/FrameworkGridView.swift)
 
 <br>
