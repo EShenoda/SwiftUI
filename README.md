@@ -45,6 +45,13 @@ __Main Files__
 
 ## Apple Frameworks
 
+<p align="center">
+	<img src= "Images/Frameworks1.png" height=250/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
+   <img src= "Images/Frameworks2.png" height=250/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
+   <img src= "Images/Frameworks3.png" height=250/>
+</p>
+
 __Topics of research__:
 
 * Model View View Model
@@ -53,6 +60,14 @@ __Topics of research__:
 * Navigation Views
 * LazyVGrid, LazyHGrid
 * Dynamic text
+
+<br>
+
+__Main Files__
+
+[ContentView](SwiftUI-WeatherApp/SwiftUI-WeatherApp/ContentView.swift)
+
+<br>
 
 ## Quick Links
 
