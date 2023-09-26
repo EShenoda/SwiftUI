@@ -52,6 +52,8 @@ __Main Files__
    <img src= "Images/Frameworks3.png" height=350/>
 </p>
 
+<br>
+
 __Topics of research__:
 
 * Model View View Model
@@ -68,8 +70,6 @@ __Main Files__
 [Framework Model](Apple-Frameworks/Apple-Frameworks/Framework.swift)
 [Framework DetailView](Apple-Frameworks/Apple-Frameworks/FrameworkDetailView.swift)
 [Framework GridView](Apple-Frameworks/Apple-Frameworks/FrameworkGridView.swift)
-
-
 
 <br>
 
