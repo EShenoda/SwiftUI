@@ -12,6 +12,7 @@ __Currently studying and updating these projects__
 
 * [Weather App](#weather-app)
 * [Apple Frameworks App](#apple-frameworks)
+* [Quick Links](#quick-links)
 * [Copyright](#copyright)
 * [Contact](#contact)
 
@@ -53,7 +54,13 @@ __Topics of research__:
 * LazyVGrid, LazyHGrid
 * Dynamic text
 
-<br>
+## Quick Links
+
+### [Click Here to View Android Illustrations](https://github.com/EShenoda/Android-Illustrations)
+
+### [Click Here to View iOS Illustrations](https://github.com/EShenoda/iOS-Game)
+
+### [Click Here to Return to Home Page](https://github.com/EShenoda)
 
 ##  Copyright
 Private Repo for EmilShenodaDev@gmail.com
