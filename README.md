@@ -46,10 +46,10 @@ __Main Files__
 ## Apple Frameworks
 
 <p align="center">
-	<img src= "Images/Frameworks1.png" height=250/>
+	<img src= "Images/Frameworks1.png" height=350/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
-   <img src= "Images/Frameworks2.png" height=250/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
-   <img src= "Images/Frameworks3.png" height=250/>
+   <img src= "Images/Frameworks2.png" height=350/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
+   <img src= "Images/Frameworks3.png" height=350/>
 </p>
 
 __Topics of research__:
