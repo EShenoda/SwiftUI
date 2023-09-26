@@ -16,6 +16,23 @@ struct FrameworkDetailView: View {
         
         VStack{
             
+            HStack{
+                
+                Spacer()
+                
+                Button{
+                    
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(Color(.label))
+                        .imageScale(.large)
+                        .frame(width: 44, height: 44)
+          
+                }
+            }
+            .padding()
+           
+            
             Spacer()
             
             FrameworkTitleView(frameworkDataToDisplay: frameworkObject)
@@ -41,5 +58,6 @@ struct FrameworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
         
         FrameworkDetailView(frameworkObject: MockData.sampleFrameworkToDisplay)
+            .preferredColorScheme(.dark)
     }
 }

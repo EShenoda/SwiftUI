@@ -8,7 +8,10 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
-    // Flexible allows you to fill the screen based on the number of columns
+    // Persist & maintain the data
+    @StateObject var viewModel = FrameworksGridViewModel()
+    
+    // flexible() allows you to fill the screen based on the number of columns
     let columnsArray: [GridItem] = [GridItem(.flexible()),
                                     GridItem(.flexible()),
                                     GridItem(.flexible())  ]
@@ -21,12 +24,28 @@ struct FrameworkGridView: View {
                 
                 LazyVGrid(columns: columnsArray) {
                     
+                    // Build each individual framework title view
                     ForEach(MockData.frameworksArray) { frameworkData in
                         
                         FrameworkTitleView(frameworkDataToDisplay: frameworkData)
+                        
+                            .onTapGesture {
+                                
+                                viewModel.selectedFramework = frameworkData
+                            }
                     }
                 }
                 .navigationTitle("🍎 Frameworks")
+                
+                // isPresented needs a boolean value
+                // bind this to the viewModel
+                .sheet(isPresented: $viewModel.isShowingDetailView) {
+                    
+                    // Present the detail view or a default if nil
+                    FrameworkDetailView(frameworkObject: viewModel.selectedFramework
+                                        
+                                        ?? MockData.sampleFrameworkToDisplay)
+                }
             }
         }
     }
