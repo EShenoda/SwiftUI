@@ -18,9 +18,9 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         
-        VStack{
+        VStack {
             
-            HStack{
+            HStack(){
                 
                 Spacer()
                 
@@ -55,6 +55,8 @@ struct FrameworkDetailView: View {
                 
                 FrameworksButton(title: "Learn More")
             }
+            
+            Spacer()
         }
     }
 }
