@@ -38,14 +38,14 @@ struct FrameworkGridView: View {
                 .navigationTitle("🍎 Frameworks")
                 
                 // isPresented needs a boolean value
-                // bind this to the viewModel
-                // the sheet is listening for changes to the  GridViewModel
+                // Bind this to the viewModel so that
+                // the sheet (slide up modal) listens for changes to the GridViewModel
                 .sheet(isPresented: $viewModel.isShowingDetailView) {
                     
                     // Present the detail view or a default if nil
                     FrameworkDetailView(frameworkObject: viewModel.selectedFramework
-                                        
                                         ?? MockData.sampleFrameworkToDisplay,
+                                        // bind the
                                         isShowingDetailView: $viewModel.isShowingDetailView )
                 }
             }
