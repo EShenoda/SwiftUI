@@ -23,6 +23,11 @@ struct FrameworkGridView: View {
                     
                     ForEach(MockData.frameworksArray){ frameworkObject in
                         FrameworkTitleView(frameworkToDisplay: frameworkObject)
+                        
+                            .onTapGesture {
+                                print("The name selected is \(frameworkObject.name)")
+                            }
+                            
                     }
                 }
                 .navigationTitle("🍎 Frameworks")

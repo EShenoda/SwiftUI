@@ -56,11 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				083B25592AC4BED000450ECE /* Apple_FrameworksV2App.swift */,
-				083B25672AC4BFCF00450ECE /* Framework.swift */,
+				083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */,
 				083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */,
+				083B25672AC4BFCF00450ECE /* Framework.swift */,
 				083B255D2AC4BED100450ECE /* Assets.xcassets */,
 				083B255F2AC4BED100450ECE /* Preview Content */,
-				083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */,
 			);
 			path = Apple_FrameworksV2;
 			sourceTree = "<group>";
