@@ -25,4 +25,9 @@ final class FrameworksGridViewModel: ObservableObject {
             isShowingDetailView = true
         }
     }
+    
+    // flexible() allows you to fill the screen based on the number of columns
+    let columnsArray: [GridItem] = [GridItem(.flexible()),
+                                    GridItem(.flexible()),
+                                    GridItem(.flexible())  ]
 }
