@@ -69,6 +69,7 @@ __Topics of research__:
 * Navigation Views
 * LazyVGrid, LazyHGrid
 * Dynamic text
+* SafariView
 
 <br>
 
