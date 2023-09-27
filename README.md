@@ -63,7 +63,7 @@ __Main Files__
 
 __Topics of research__:
 
-* Model View View Model
+* Model View ViewModel
 * Passing data between views
 * Grids, Scrollviews, Sheets
 * Navigation Views
