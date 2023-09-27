@@ -10,6 +10,7 @@ import SwiftUI
 struct FrameworkDetailView: View {
 
     var frameworkObject: Framework
+    @Binding var isShowingDetailView: Bool
     
     var body: some View {
         
@@ -20,6 +21,7 @@ struct FrameworkDetailView: View {
                 Spacer()
                 
                 Button {
+                    isShowingDetailView = false
                     
                 }label: {
                     Image(systemName: "xmark")
@@ -58,7 +60,8 @@ struct FrameworkDetailView: View {
 
 struct FrameworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailView(frameworkObject: MockData.sampleFrameworkToDisplay)
+        FrameworkDetailView(frameworkObject: MockData.sampleFrameworkToDisplay,
+                            isShowingDetailView: .constant(false))
             .preferredColorScheme(.dark)
     }
 }
