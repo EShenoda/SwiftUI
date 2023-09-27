@@ -14,6 +14,8 @@ struct FrameworkDetailView: View {
     // Need this button to dismiss the DetailView
     // binding to the parent view (FrameworkGridView)
     @Binding var isShowingDetailView: Bool
+    // Unique to one screen...private
+    @State private var isShowingSafariView = false
 
     
     var body: some View {
@@ -51,6 +53,8 @@ struct FrameworkDetailView: View {
             Spacer()
             
             Button{
+                // On button tapped...
+                isShowingSafariView = true
                 
             } label: {
                 
@@ -59,6 +63,10 @@ struct FrameworkDetailView: View {
             
             Spacer()
         }
+        // Change .sheet to .fullScreenCover
+        .fullScreenCover(isPresented: $isShowingSafariView, content: {
+            SafariView(url: URL(string: frameworkObject.urlString) ?? URL(string: "www.apple.com")!)
+        })
     }
 }
 
