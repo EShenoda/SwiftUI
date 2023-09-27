@@ -27,17 +27,26 @@ struct FrameworkGridView: View {
                             .onTapGesture {
                                 print("The name selected is \(frameworkObject.name)")
                             }
-                            
                     }
                 }
-                .navigationTitle("🍎 Frameworks")
+                
+                //.navigationTitle("🍎 Frameworks")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text("🍎 Frameworks")
+                            .font(.largeTitle.bold())
+                            .accessibilityAddTraits(.isHeader)
+                    }
+                }
+                .padding()
             }
         }
     }
 }
 
 struct FrameworkTitleView: View {
-  
+    
     let frameworkToDisplay: Framework
     
     var body: some View {
