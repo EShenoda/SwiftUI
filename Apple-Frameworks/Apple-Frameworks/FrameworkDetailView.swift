@@ -26,6 +26,7 @@ struct FrameworkDetailView: View {
                 
                 Button{
                     
+                    // Tapping the "X" closes the detail view & changes it to false
                     isShowingDetailView = false
                     
                 } label: {

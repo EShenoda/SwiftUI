@@ -8,7 +8,7 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
-    // Persist & maintain the data
+    // Persist & maintains the data as the FrameworkGridView gets destroyed
     @StateObject var viewModel = FrameworksGridViewModel()
     
     // flexible() allows you to fill the screen based on the number of columns
