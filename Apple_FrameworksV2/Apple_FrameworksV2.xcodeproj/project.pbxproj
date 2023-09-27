@@ -12,6 +12,7 @@
 		083B25612AC4BED100450ECE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083B25602AC4BED100450ECE /* Preview Assets.xcassets */; };
 		083B25682AC4BFCF00450ECE /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B25672AC4BFCF00450ECE /* Framework.swift */; };
 		083B256A2AC4C0AC00450ECE /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */; };
+		083B256C2AC4D23600450ECE /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		083B25602AC4BED100450ECE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		083B25672AC4BFCF00450ECE /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */,
 				083B255D2AC4BED100450ECE /* Assets.xcassets */,
 				083B255F2AC4BED100450ECE /* Preview Content */,
+				083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */,
 			);
 			path = Apple_FrameworksV2;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083B256C2AC4D23600450ECE /* FrameworkDetailView.swift in Sources */,
 				083B256A2AC4C0AC00450ECE /* FrameworkGridView.swift in Sources */,
 				083B25682AC4BFCF00450ECE /* Framework.swift in Sources */,
 				083B255A2AC4BED000450ECE /* Apple_FrameworksV2App.swift in Sources */,
