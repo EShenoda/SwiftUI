@@ -42,8 +42,6 @@ __Main Files__
 
 [ContentView](SwiftUI-WeatherApp/SwiftUI-WeatherApp/ContentView.swift)
 
-<br>
-
 ## Apple Frameworks
 
 <p align="center">
@@ -82,7 +80,7 @@ __Main Files__
 
 [Framework GridView](Apple-Frameworks/Apple-Frameworks/FrameworkGridView.swift)
 
-<br>
+
 
 ## Apple Frameworks Version II
 
@@ -106,7 +104,7 @@ __Topics of research__:
 * NavigationLink
 
 
-<br>
+
 
 ## Quick Links
 
