@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct FrameworkButton: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Learn More")
+            .font(.title2)
+            .fontWeight(.semibold)
+            .frame(width: 280, height: 50)
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(25)
     }
 }
 

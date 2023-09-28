@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-
+    
     var frameworkObject: Framework
     @Binding var isShowingDetailView: Bool
+    // change to true when the "Learn more" button is tapped
+    @State private var isShowingSafariView = false
     
     var body: some View {
         
@@ -42,19 +44,20 @@ struct FrameworkDetailView: View {
             
             Button {
                 
+                isShowingSafariView = true
+                
             } label: {
-                Text("Learn More")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .frame(width: 280, height: 50)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(25)
+                FrameworkButton()
             }
             
             Spacer()
-
+            
         }
+        .sheet(isPresented: $isShowingSafariView, content: {
+            SafariView(urlPassedIn: URL(string: frameworkObject.urlString)
+            ?? URL(string: "www.apple.com")!)
+        })
+        
     }
 }
 
