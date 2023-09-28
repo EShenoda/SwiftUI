@@ -21,23 +21,24 @@ struct FrameworkListView: View {
                     
                     NavigationLink(destination:
                                     FrameworkDetailView(framework: frameworkObject, isShowingDetailView: $listViewModel.isShowingDetailView)){
+                        // Whatever cell the user taps on the list is the object we're passing to the SafariView
                         FrameworkTitleView(frameworkToDisplay: frameworkObject)
                     }
                 }
                 
             }.environment(\.defaultMinListRowHeight, 80) //minimum row height
-                
+            
             
             //.navigationTitle("🍎 Frameworks")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("🍎 Frameworks")
-                        .font(.largeTitle.bold())
-                        .accessibilityAddTraits(.isHeader)
-                        .accentColor(Color(.label))
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text("🍎 Frameworks")
+                            .font(.largeTitle.bold())
+                            .accessibilityAddTraits(.isHeader)
+                            .accentColor(Color(.label))
+                    }
                 }
-            }
         }
     }
 }
