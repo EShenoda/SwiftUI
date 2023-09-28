@@ -12,15 +12,13 @@ final class FrameworkGridViewModel: ObservableObject{
     
     @Published var isShowingDetailView = false
     
-    var selectedFramework: Framework?{
-        
+    var selectedFramework: Framework? {
         didSet{
             isShowingDetailView = true
         }
     }
     
-    
-    
-    
-    
+    let columnsArray: [GridItem] = [GridItem(.flexible()),
+                                    GridItem(.flexible()),
+                                    GridItem(.flexible())]
 }

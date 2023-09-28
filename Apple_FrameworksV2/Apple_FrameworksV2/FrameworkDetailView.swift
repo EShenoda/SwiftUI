@@ -9,7 +9,8 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    var frameworkObject: Framework
+    var framework: Framework
+    
     @Binding var isShowingDetailView: Bool
     // change to true when the "Learn more" button is tapped
     @State private var isShowingSafariView = false
@@ -18,25 +19,13 @@ struct FrameworkDetailView: View {
         
         VStack{
             
-            HStack{
-                
-                Spacer()
-                
-                Button {
-                    isShowingDetailView = false
-                    
-                }label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                }
-            }
-            .padding()
+            Spacer()
             
-            FrameworkTitleView(frameworkToDisplay: frameworkObject)
+            FrameworkTitleView(frameworkToDisplay: framework)
             
-            Text(frameworkObject.description)
+            Spacer()
+            
+            Text(framework.description)
                 .font(.body)
                 .padding()
             
@@ -53,8 +42,8 @@ struct FrameworkDetailView: View {
             Spacer()
             
         }
-        .sheet(isPresented: $isShowingSafariView, content: {
-            SafariView(urlPassedIn: URL(string: frameworkObject.urlString)
+        .fullScreenCover(isPresented: $isShowingSafariView, content: {
+            SafariView(urlPassedIn: URL(string: framework.urlString)
             ?? URL(string: "www.apple.com")!)
         })
         
@@ -63,7 +52,7 @@ struct FrameworkDetailView: View {
 
 struct FrameworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailView(frameworkObject: MockData.sampleFrameworkToDisplay,
+        FrameworkDetailView(framework: MockData.sampleFrameworkToDisplay,
                             isShowingDetailView: .constant(false))
             .preferredColorScheme(.dark)
     }
