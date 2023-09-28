@@ -100,7 +100,6 @@ __Main Files__
 
 
 ```Swift
-
 struct FrameworkListView: View {
     
     @StateObject var listViewModel = FrameworkListViewModel()
@@ -114,16 +113,17 @@ struct FrameworkListView: View {
                 ForEach(MockData.frameworksArray){ frameworkObject in
                     
                     NavigationLink(destination:
-                                    FrameworkDetailView(framework: frameworkObject, isShowingDetailView: $listViewModel.isShowingDetailView)){
-                        // Whatever cell the user taps on the list is the object we're passing to the SafariView
+                                    FrameworkDetailView(framework: frameworkObject,
+                                                        isShowingDetailView:
+                                                            $listViewModel.isShowingDetailView)){
+                        // Whatever cell the user taps on the list
+                        // is the object we're passing to the SafariView
                         FrameworkTitleView(frameworkToDisplay: frameworkObject)
                     }
                 }
                 
             }.environment(\.defaultMinListRowHeight, 80) //minimum row height
-            
-            
-            //.navigationTitle("🍎 Frameworks")
+
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
@@ -136,6 +136,7 @@ struct FrameworkListView: View {
         }
     }
 }
+
 ```
 
 
