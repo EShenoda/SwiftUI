@@ -73,6 +73,32 @@ __Topics of research__:
 <br>
 
 
+__Main Files__
+
+[Framework Model](Apple-Frameworks/Apple-Frameworks/Framework.swift)
+
+[Framework DetailView](Apple-Frameworks/Apple-Frameworks/FrameworkDetailView.swift)
+
+[Framework GridView](Apple-Frameworks/Apple-Frameworks/FrameworkGridView.swift)
+
+
+
+## Apple Frameworks Version II
+
+<p align="center">
+	<img src= "Images/Frameworks5.png" height=350/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
+   <img src= "Images/Frameworks6.png" height=350/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
+   <img src= "Images/Frameworks7.png" height=350/>
+
+</p>
+
+#### Main Challenge:
+
+* Refactor & change the gridview to a listview
+
+
 ```Swift
 
 struct FrameworkListView: View {
@@ -112,30 +138,6 @@ struct FrameworkListView: View {
 }
 ```
 
-__Main Files__
-
-[Framework Model](Apple-Frameworks/Apple-Frameworks/Framework.swift)
-
-[Framework DetailView](Apple-Frameworks/Apple-Frameworks/FrameworkDetailView.swift)
-
-[Framework GridView](Apple-Frameworks/Apple-Frameworks/FrameworkGridView.swift)
-
-
-
-## Apple Frameworks Version II
-
-<p align="center">
-	<img src= "Images/Frameworks5.png" height=350/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
-   <img src= "Images/Frameworks6.png" height=350/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;
-   <img src= "Images/Frameworks7.png" height=350/>
-
-</p>
-
-#### Main Challenge:
-
-* Refactor & change the gridview to a listview
 
 __Topics of research__:
 
