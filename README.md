@@ -95,6 +95,17 @@ __Main Files__
 
 </p>
 
+#### Main Challenge:
+
+* Refactor & change the gridview to a listview
+
+__Topics of research__:
+
+* Lists
+* Toolbars
+* NavigationLink
+
+
 <br>
 
 ## Quick Links
