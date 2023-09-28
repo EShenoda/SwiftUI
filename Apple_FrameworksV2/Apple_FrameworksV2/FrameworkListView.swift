@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct FrameworkGridView: View {
+struct FrameworkListView: View {
     
-    @StateObject var gridViewModel = FrameworkGridViewModel()
+    @StateObject var listViewModel = FrameworkListViewModel()
     
     var body: some View {
         
@@ -20,7 +20,7 @@ struct FrameworkGridView: View {
                 ForEach(MockData.frameworksArray){ frameworkObject in
                     
                     NavigationLink(destination:
-                                    FrameworkDetailView(framework: frameworkObject, isShowingDetailView: $gridViewModel.isShowingDetailView)){
+                                    FrameworkDetailView(framework: frameworkObject, isShowingDetailView: $listViewModel.isShowingDetailView)){
                         FrameworkTitleView(frameworkToDisplay: frameworkObject)
                     }
                 }
@@ -44,7 +44,7 @@ struct FrameworkGridView: View {
 
 struct FrameworkGridView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkGridView()
+        FrameworkListView()
             .preferredColorScheme(.dark)
     }
 }

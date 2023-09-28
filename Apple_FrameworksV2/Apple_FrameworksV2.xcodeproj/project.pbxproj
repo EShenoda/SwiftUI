@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		081548142AC4F25100C7B546 /* FrameworkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081548132AC4F25100C7B546 /* FrameworkButton.swift */; };
-		081548162AC4F46000C7B546 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081548152AC4F46000C7B546 /* FrameworkGridViewModel.swift */; };
+		081548162AC4F46000C7B546 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081548152AC4F46000C7B546 /* FrameworkListViewModel.swift */; };
 		081548182AC4F84D00C7B546 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081548172AC4F84D00C7B546 /* SafariView.swift */; };
 		0815481A2AC502F700C7B546 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081548192AC502F700C7B546 /* FrameworkTitleView.swift */; };
 		0815481C2AC5042E00C7B546 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815481B2AC5042E00C7B546 /* DismissButton.swift */; };
@@ -16,13 +16,13 @@
 		083B255E2AC4BED100450ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083B255D2AC4BED100450ECE /* Assets.xcassets */; };
 		083B25612AC4BED100450ECE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083B25602AC4BED100450ECE /* Preview Assets.xcassets */; };
 		083B25682AC4BFCF00450ECE /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B25672AC4BFCF00450ECE /* Framework.swift */; };
-		083B256A2AC4C0AC00450ECE /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */; };
+		083B256A2AC4C0AC00450ECE /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B25692AC4C0AC00450ECE /* FrameworkListView.swift */; };
 		083B256C2AC4D23600450ECE /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		081548132AC4F25100C7B546 /* FrameworkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkButton.swift; sourceTree = "<group>"; };
-		081548152AC4F46000C7B546 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		081548152AC4F46000C7B546 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
 		081548172AC4F84D00C7B546 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		081548192AC502F700C7B546 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		0815481B2AC5042E00C7B546 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
@@ -31,7 +31,7 @@
 		083B255D2AC4BED100450ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		083B25602AC4BED100450ECE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		083B25672AC4BFCF00450ECE /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
-		083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		083B25692AC4C0AC00450ECE /* FrameworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
 		083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,8 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				083B25592AC4BED000450ECE /* Apple_FrameworksV2App.swift */,
-				083B25692AC4C0AC00450ECE /* FrameworkGridView.swift */,
-				081548152AC4F46000C7B546 /* FrameworkGridViewModel.swift */,
+				083B25692AC4C0AC00450ECE /* FrameworkListView.swift */,
+				081548152AC4F46000C7B546 /* FrameworkListViewModel.swift */,
 				081548192AC502F700C7B546 /* FrameworkTitleView.swift */,
 				083B256B2AC4D23600450ECE /* FrameworkDetailView.swift */,
 				083B25672AC4BFCF00450ECE /* Framework.swift */,
@@ -159,11 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				083B256C2AC4D23600450ECE /* FrameworkDetailView.swift in Sources */,
-				083B256A2AC4C0AC00450ECE /* FrameworkGridView.swift in Sources */,
+				083B256A2AC4C0AC00450ECE /* FrameworkListView.swift in Sources */,
 				083B25682AC4BFCF00450ECE /* Framework.swift in Sources */,
 				083B255A2AC4BED000450ECE /* Apple_FrameworksV2App.swift in Sources */,
 				081548142AC4F25100C7B546 /* FrameworkButton.swift in Sources */,
-				081548162AC4F46000C7B546 /* FrameworkGridViewModel.swift in Sources */,
+				081548162AC4F46000C7B546 /* FrameworkListViewModel.swift in Sources */,
 				0815481C2AC5042E00C7B546 /* DismissButton.swift in Sources */,
 				0815481A2AC502F700C7B546 /* FrameworkTitleView.swift in Sources */,
 				081548182AC4F84D00C7B546 /* SafariView.swift in Sources */,

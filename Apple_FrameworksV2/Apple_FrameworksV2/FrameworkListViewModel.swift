@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-final class FrameworkGridViewModel: ObservableObject{
+final class FrameworkListViewModel: ObservableObject{
     
     @Published var isShowingDetailView = false
     
