@@ -27,7 +27,7 @@ struct BarcodeScannerView: View {
                 
                 Text("Not Yet Scanned")
                     .bold()
-                    .font(.largeTitle)
+                    .font(.title2)
                     .foregroundColor(.green)
                     .padding()
                 
